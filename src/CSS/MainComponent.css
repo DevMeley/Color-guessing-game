@@ -1,0 +1,44 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.box{
+    height: 150px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+button{
+    padding: 30px 35px;
+    border-radius: 5px;
+    border: none;
+}
+.cancelBtn{
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+.score-and-cancel-button{
+    display: flex;
+    justify-content: space-between;
+    gap: 180px;
+}
+.colorOptions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+p{
+    font-size: 24px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 32px;
+}
