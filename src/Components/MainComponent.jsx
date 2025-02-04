@@ -58,18 +58,27 @@ export default function MainComponent() {
   return (
     <div>
       <div className="body">
-        <h2>Can you guess the right Color?</h2>
+        <h2 data-testid="gameInstructions">Can you guess the right Color?</h2>
         <div className="score-and-cancel-button">
-          <p>Score: {gameScore} </p>
-          <button className="cancelBtn" onClick={() => handleNewGame()}>
+          <p data-testid="score">Score: {gameScore} </p>
+          <button
+            className="cancelBtn"
+            data-testid="newGameButton"
+            onClick={() => handleNewGame()}
+          >
             New game
           </button>
         </div>
-        <span>{gameStatus}</span>
-        <div className="box" style={{ backgroundColor: targetColor }}></div>
+        <span data-testid="gameStatus">{gameStatus}</span>
+        <div
+          className="box"
+          data-testid="colorBox"
+          style={{ backgroundColor: targetColor }}
+        ></div>
         <div className="colorOptions">
           {colorOption.map((color, index) => (
             <button
+              data-testid="colorOption"
               key={index}
               style={{ backgroundColor: color }}
               onClick={() => handleGuess(color)}
