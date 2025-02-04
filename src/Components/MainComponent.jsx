@@ -22,12 +22,12 @@ export default function MainComponent() {
     const newTargetColor = randomColorGenerator();
     const option = [
       newTargetColor,
-      randomColorGenerator,
-      randomColorGenerator,
-      randomColorGenerator,
-      randomColorGenerator,
-      randomColorGenerator,
-    ].sort(() => Math.random() - 0.5);
+      randomColorGenerator(),
+      randomColorGenerator(),
+      randomColorGenerator(),
+      randomColorGenerator(),
+      randomColorGenerator(),
+    ].sort(() => 0.5 - Math.random());
     setTargetColor(newTargetColor);
     setColorOption(option);
     setGameStatus("");
