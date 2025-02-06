@@ -5,10 +5,10 @@
     align-items: center;
     min-height: 50vh;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
-.body-content{background-color: rgb(253, 202, 143);
+.body-content{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,8 @@
     width: 400px;
     padding: 20px 5px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
+    
 }
     
 .box{
@@ -55,7 +57,7 @@ h2{
     text-align: center;
 }
 span{
-    height: 30px;
+    height: 20px;
     font-size: 20px;
     
 }
