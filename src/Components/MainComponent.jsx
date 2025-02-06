@@ -56,8 +56,8 @@ export default function MainComponent() {
   };
 
   return (
-    <div>
-      <div className="body">
+    <div className="body">
+      <div className="body-content">
         <h2 data-testid="gameInstructions">Can you guess the right Color?</h2>
         <div className="score-and-cancel-button">
           <p data-testid="score">Score: {gameScore} </p>
